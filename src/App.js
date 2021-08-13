@@ -1,8 +1,19 @@
 import React from 'react';
 
-function App() {
+function App() {  
+  
   const value = 'World';
-  return <div>Hello {value}</div>;
+  const [data, setData] = useState('');
+
+  useEffect(() => {
+    (async function () {
+      const { text } = await( await fetch(`/api/message`)).json();
+      setData(text);
+    })();
+  });
+
+  return <div>Hello {value}{data}</div>;
+ 
 }
 
 export default App;
