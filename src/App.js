@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function App() {  
-  
-  const value = 'World';
+function App() {
   const [data, setData] = useState('');
 
   useEffect(() => {
@@ -12,9 +10,7 @@ function App() {
     })();
   });
 
-  return <div>Hello: {value}<br></br>
-  {data}</div>;
- 
+  return <div>{data}</div>;
 }
 
 export default App;
