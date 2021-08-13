@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {  
   
-  const value = 'World';
+ // const value = 'World';
   const [data, setData] = useState('');
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function App() {
     })();
   });
 
-  return <div>Hello {value}{data}</div>;
+  return <div> {data}</div>;
  
 }
 
