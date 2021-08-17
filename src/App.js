@@ -10,7 +10,12 @@ function App() {
     })();
   });
 
-  return <div>{data}</div>;
+  return(
+    <div>
+      <p>String : {data.string}</p>
+      <p>Number : {data.number}</p>
+    </div>
+  )
 }
 
 export default App;
