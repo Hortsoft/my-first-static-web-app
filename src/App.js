@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div>
-      <p>String : {data.id}</p>
-      <p>Number : {data.name}</p>
+      <p>String : {data}</p>
+      <p>Number : {data}</p>
     </div>
   )
 }
