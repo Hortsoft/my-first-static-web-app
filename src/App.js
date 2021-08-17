@@ -10,10 +10,10 @@ function App() {
     })();
   });
 
-  return(
+  return (
     <div>
-      <p>String : {data.string}</p>
-      <p>Number : {data.number}</p>
+      <p>String : {data.id}</p>
+      <p>Number : {data.name}</p>
     </div>
   )
 }
