@@ -23,7 +23,7 @@ function App() {
       {data.map(user=> (
         <div key={user.id} className="row">
           <div className="col-md-12">
-            <Link to={`{user.name}`}>{user.name}</Link>
+            <Link>{user.name}</Link>
           </div>
         </div>
       ))}
