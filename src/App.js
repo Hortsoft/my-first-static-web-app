@@ -12,7 +12,9 @@ function App() {
 
   return (
     <div>
-    {data.content.body.map(block => block.component)}
+   <ul>
+                {data.map(s => (<li>{s}</li>))}
+            </ul>
     </div>
   )
 }
