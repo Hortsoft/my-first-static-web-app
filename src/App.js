@@ -13,14 +13,9 @@ function App() {
   return (
     <div> 
     <ul>
-        {data.map((dat) => (
-          <li key={dat.id}>
-            <h3>
-              {dat.id} {dat.name}
-            </h3>
-            <p>{dat.name}</p>
-          </li>
-        ))}
+    {data.map((item) => (
+        <li key={item.id}>{item.name}</li>
+      ))}
       </ul>
           
     </div>
