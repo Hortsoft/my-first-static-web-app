@@ -1,6 +1,8 @@
 import React from 'react'; 
 import { useAsync } from 'react-async'; 
 
+import { NavLink } from 'react-router-dom';
+
 // Then we'll fetch user data from this API
 const loadUsers = async () =>
   await fetch(`/api/message`)
@@ -18,6 +20,9 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
+        <NavLink to="/home" activeClassName="active-link">
+            Home
+          </NavLink>
       </div>
       {data.map(user=> (
         <div key={user.id} className="row">
