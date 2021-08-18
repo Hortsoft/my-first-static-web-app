@@ -12,9 +12,9 @@ function App() {
 
   return (
     <div><ul>
-    {this.state.data.map(el => (
-      <li key={el.id}>{el.name}</li>
-    ))}
+    {data.map(el => (
+          <li key={el.id}>{el.title}</li>
+        ))}
   </ul>
     </div>
   )
