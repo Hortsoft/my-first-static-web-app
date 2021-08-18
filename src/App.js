@@ -1,6 +1,5 @@
 import React from 'react';
-import { useAsync } from 'react-async';
-import { NavLink } from 'react-router-dom';
+import { useAsync } from 'react-async'; 
 
 // Then we'll fetch user data from this API
 const loadUsers = async () =>
@@ -24,9 +23,7 @@ function App() {
         <div key={user.id} className="row">
           <div className="col-md-12">
              {user.name} 
-            <NavLink   to={user.name} activeClassName='active-link'>
-               {user.name}
-          </NavLink>
+            
           </div>
         </div>
       ))}
