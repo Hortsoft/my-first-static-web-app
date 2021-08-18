@@ -17,7 +17,7 @@
       "name": "res"
     },
     {
-      "name": "devices",
+      "name": "trees",
       "type": "cosmosDB",
       "direction": "in",
       "databaseName": "trees",
