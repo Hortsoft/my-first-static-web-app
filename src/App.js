@@ -25,7 +25,7 @@ function App() {
       <ul>
        
       {data.map(user=> (
-         <li><Link to="/home" activeClassName="active-link">
+         <li><Link to= {user.name} activeClassName="active-link">
              {user.name} 
              </Link>
              </li> 
