@@ -9,6 +9,11 @@ const loadUsers = async () =>
     .then(res => (res.ok ? res : Promise.reject(res)))
     .then(res => res.json())
  
+   
+    function sayHello() {
+      alert('You clicked me!');
+    }
+
 function App() {
   const { data, error, isLoading } = useAsync({ promiseFn: loadUsers })
   if (isLoading) return "Loading..."
@@ -20,8 +25,11 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
-
+        <button onClick={sayHello}>Default</button>;
         <Router>
+        <Link to="first" > add
+  
+</Link>
           <ul>
             {data.map((user) => (
               <li>
@@ -33,7 +41,7 @@ function App() {
           </ul>{" "}
         </Router>
       </div>
-    </div>
+    </div> 
   );
 }
 export default App;
