@@ -12,8 +12,7 @@ function App() {
 
   return (
     <div>
-      <p>String : {data}</p>
-      <p>Number : {data}</p>
+    data && data.length>0 && data.map((item)=><p>{data.about}</p>)
     </div>
   )
 }
