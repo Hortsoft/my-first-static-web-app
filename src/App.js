@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 
 function App() {
   const [data, setData] = useState([]);
@@ -14,15 +14,15 @@ function App() {
 }, []);
 
   return (
-    <div> 
-    <ul>
-    {data.map((item) => (
-        <li key={item}>{item.name}</li>
-      ))}
+    <div>
+      <Suspense fallback={<div>Loading...</div>}></Suspense>
+      <ul>
+        {data.map((item) => (
+          <li key={item}>{item.name}</li>
+        ))}
       </ul>
-          
     </div>
-  )
+  );
 }
 
 export default App;
