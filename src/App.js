@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="container">
       <div>
-        <h2>React Async - Cosomos Trees</h2>
+        <h2>React Async - Cosmos DB Trees</h2>
       </div>
       {data.map(user=> (
         <div key={user.id} className="row">
