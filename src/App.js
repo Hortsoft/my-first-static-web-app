@@ -13,12 +13,12 @@ function App() {
   return (
     <div> 
     <ul>
-        {data.map((tree) => (
-          <li key={tree.id}>
+        {data.map((dat) => (
+          <li key={dat.id}>
             <h3>
-              {tree.id} {tree.name}
+              {dat.id} {dat.name}
             </h3>
-            <p>{tree.name}</p>
+            <p>{dat.name}</p>
           </li>
         ))}
       </ul>
