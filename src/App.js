@@ -11,10 +11,11 @@ function App() {
   });
 
   return (
-    <div>
-   <ul>
-                {data.map(s => (<li>{s}</li>))}
-            </ul>
+    <div><ul>
+    {this.state.data.map(el => (
+      <li key={el.id}>{el.name}</li>
+    ))}
+  </ul>
     </div>
   )
 }
