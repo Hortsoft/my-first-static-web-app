@@ -25,8 +25,8 @@ function App() {
           <ul>
             {data.map((user) => (
               <li>
-                <Link to={user.name} activeClassName="active-link">
-                  {user.name}
+                <Link style={{ textDecoration: 'none' }} to={user.name} activeClassName="active-link">
+                 {user.name} 
                 </Link>
               </li>
             ))}
