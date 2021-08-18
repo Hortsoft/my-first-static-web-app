@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [data, setData] = useState('');
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     (async function () {
@@ -12,7 +12,16 @@ function App() {
 
   return (
     <div> 
-    {data}
+    <ul>
+        {data.map((tree) => (
+          <li key={tree.id}>
+            <h3>
+              {tree.id} {tree.name}
+            </h3>
+            <p>{tree.name}</p>
+          </li>
+        ))}
+      </ul>
           
     </div>
   )
