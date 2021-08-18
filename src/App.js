@@ -20,19 +20,19 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
-         
-      <Router>
-      <ul>
-       
-      {data.map(user=> (
-         <li><Link to= {user.name} activeClassName="active-link">
-             {user.name} 
-             </Link>
-             </li> 
-      ))}
-      </ul> </Router>
-    </div>
-    
+
+        <Router>
+          <ul>
+            {data.map((user) => (
+              <li>
+                <Link to={user.name} activeClassName="active-link">
+                  {user.name}
+                </Link>
+              </li>
+            ))}
+          </ul>{" "}
+        </Router>
+      </div>
     </div>
   );
 }
