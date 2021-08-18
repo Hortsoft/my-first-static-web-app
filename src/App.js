@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-    data && data.length>0 && data.map((item)=><p>{data.about}</p>)
+    {data.content.body.map(block => block.component)}
     </div>
   )
 }
