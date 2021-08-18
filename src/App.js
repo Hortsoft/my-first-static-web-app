@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { useAsync } from 'react-async'; 
 
 // Then we'll fetch user data from this API
@@ -22,6 +23,7 @@ function App() {
       {data.map(user=> (
         <div key={user.id} className="row">
           <div className="col-md-12">
+          <NavLink to={user.name}  className="link" activeClassName="active" exact></NavLink>
              {user.name} 
             
           </div>
