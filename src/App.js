@@ -23,7 +23,7 @@ function App() {
       {data.map(user=> (
         <div key={user.id} className="row">
           <div className="col-md-12">
-            <p>{user.name}</p><Link to={`/articles/${user.id}`} style={{color: 'white'}} activeStyle={{color: 'red'}}>{user.name}</Link>
+            <Link to={`/articles/${user.id}`} style={{color: 'white'}} activeStyle={{color: 'red'}}>{user.name}</Link>
           </div>
         </div>
       ))}
