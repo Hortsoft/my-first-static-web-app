@@ -25,7 +25,7 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
-        <button onClick={sayHello}>Default</button>;
+        <button style={{background:'green'}} onClick={sayHello}>Default</button>;
         <Router>
         <Link to="first" > add
   
