@@ -3,7 +3,7 @@
     {
       "authLevel": "anonymous",
       "type": "httpTrigger",
-      "direction": "out",
+      "direction": "in",
       "name": "req",
       "methods": [
         "get",
