@@ -8,14 +8,9 @@ module.exports = async function (context, req) {
 
     if (newItem != null) {
 
-       // const { resource: createdItem } = await container.items.create(newItem);
-
-       // context.bindings.outputDocument = req.body;
-
         context.bindings.outputDocument = newItem;
-        context.res = {
-            body: {'result': 'success'}
-        };
+        context.done();
+        
     }else{
         context.res = {
             status: 400,

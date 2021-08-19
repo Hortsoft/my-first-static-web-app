@@ -3,7 +3,7 @@
     {
       "authLevel": "anonymous",
       "type": "httpTrigger",
-      "direction": "in",
+      "direction": "out",
       "name": "req",
       "methods": [
         "get",
@@ -19,11 +19,11 @@
     {
       "name": "trees",
       "type": "cosmosDB",
-      "direction": "out",
       "databaseName": "trees",
       "collectionName": "varieties",
-      "sqlQuery": "SELECT c.id, c.name FROM c",
-      "connectionStringSetting": "CosmosDBConnection"    
+      "createIfNotExists": true,
+      "connectionStringSetting": "CosmosDBConnection",
+      "direction": "out"   
     }
   ]
 }
