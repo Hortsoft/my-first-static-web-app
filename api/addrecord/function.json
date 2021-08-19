@@ -6,10 +6,8 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "get",
         "post"
-      ],
-      "route": "addrecord"
+      ]
     },
     {
       "type": "http",
@@ -17,13 +15,15 @@
       "name": "res"
     },
     {
-      "name": "trees",
+      "name": "outputDocument",
       "type": "cosmosDB",
       "databaseName": "trees",
       "collectionName": "varieties",
       "createIfNotExists": true,
       "connectionStringSetting": "CosmosDBConnection",
+      "partitionKey": "/name",
       "direction": "out"
     }
-  ]
+  ],
+  "disabled": false
 }
