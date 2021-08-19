@@ -4,6 +4,6 @@ module.exports = function (context, req) {
     name: "Pohutukawa",
   };
 
-  context.bindings.outputDocument = newItem;
+  context.bindings.outputDocument = JSON.stringify(newItem);
   context.done();
 };
