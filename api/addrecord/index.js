@@ -7,10 +7,10 @@ module.exports = function (context, req) {
 
   //context.bindings.outputDocument = JSON.stringify(newItem);
   context.bindings.outputDocument = JSON.stringify({
-    id: context.bindings.myQueueItem.id,
-    name: context.bindings.myQueueItem.name
+      id: "5",
+      name: "Pohutukawa"
   });
 
   context.done();
-  
+
 };
