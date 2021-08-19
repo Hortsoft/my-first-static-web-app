@@ -11,7 +11,7 @@ const loadUsers = async () =>
  
     function addRecordAPI() {
       alert('Trying to add a record!');
-      await fetch(`/api/addrecord`)
+        fetch(`/api/addrecord`)
     }
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
-        <button style={{background:'green'}} onClick={addRecord}>Default</button>
+        <button style={{background:'green'}} onClick={addRecordAPI}>Default</button>
         <Router>
         <Link to="first"> add</Link>
           <ul>
