@@ -9,7 +9,6 @@ const loadUsers = async () =>
     .then(res => (res.ok ? res : Promise.reject(res)))
     .then(res => res.json())
  
-   
     function sayHello() {
       alert('You clicked me!');
     }
@@ -25,15 +24,13 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
-        <button style={{background:'green'}} onClick={sayHello}>Default</button>;
+        <button style={{background:'green'}} onClick={sayHello}>Default</button>
         <Router>
-        <Link to="first" > add
-  
-</Link>
+        <Link to="first"> add</Link>
           <ul>
             {data.map((user) => (
-              <li>
-                <Link style={{ textDecoration: 'none' }} to={user.name} activeClassName="active-link">
+              <li style={{ textDecoration: 'none' }} >
+                <Link to={user.name} activeClassName="active-link">
                  {user.name} 
                 </Link>
               </li>

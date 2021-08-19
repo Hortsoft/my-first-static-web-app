@@ -1,0 +1,29 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "route": "addrecord"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "trees",
+      "type": "cosmosDB",
+      "direction": "out",
+      "databaseName": "trees",
+      "collectionName": "varieties",
+      "sqlQuery": "SELECT c.id, c.name FROM c",
+      "connectionStringSetting": "CosmosDBConnection"    
+    }
+  ]
+}
