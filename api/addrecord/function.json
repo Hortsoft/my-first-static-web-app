@@ -23,7 +23,7 @@
       "collectionName": "varieties",
       "createIfNotExists": true,
       "connectionStringSetting": "CosmosDBConnection",
-      "direction": "out"   
+      "direction": "out"
     }
   ]
 }

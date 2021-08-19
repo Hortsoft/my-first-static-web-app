@@ -1,12 +1,9 @@
-module.exports = async function (context, req) {
+module.exports = function (context) {
+  const newItem = {
+    id: "5",
+    name: "Pohutukawa",
+  };
 
-    const newItem = {
-        id: "5",
-        name: "Pohutukawa"
-      };
-       
-      context.bindings.outputDocument = newItem;
-        context.done();
- 
+  context.bindings.outputDocument = newItem;
+  context.done();
 };
-
