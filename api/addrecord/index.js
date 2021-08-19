@@ -1,5 +1,5 @@
-module.exports = async function (context, req) {
-  req.body.id = "4";
+module.exports = function (context, req) {
+  req.body.id = "5";
   req.body.name = "Putaputaweta";
 
   const name = req.body.name;
