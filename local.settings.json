@@ -1,0 +1,10 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+      "AzureWebJobsStorage": "",
+      "FUNCTIONS_WORKER_RUNTIME": "node",
+      "CosmosConnectionString":"AccountEndpoint=https://first-static-web-app.documents.azure.com:443/;AccountKey=Z73up4mjBtWQDJuMYwiUnMsVECHecrf2kUgcUhXjjWvgaXU7pJnqvWKY2NZP3feu8Uep6wLCjhulGidq7DQV8w==;"
+    },"Host": {
+      "CORS": "*"
+    }
+  }
