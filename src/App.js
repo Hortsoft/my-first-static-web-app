@@ -9,8 +9,9 @@ const loadUsers = async () =>
     .then(res => (res.ok ? res : Promise.reject(res)))
     .then(res => res.json())
  
-    function sayHello() {
-      alert('You clicked me!');
+    function addRecordAPI() {
+      alert('Trying to add a record!');
+      await fetch(`/api/addrecord`)
     }
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
-        <button style={{background:'green'}} onClick={sayHello}>Default</button>
+        <button style={{background:'green'}} onClick={addRecord}>Default</button>
         <Router>
         <Link to="first"> add</Link>
           <ul>
