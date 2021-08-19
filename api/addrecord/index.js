@@ -2,7 +2,7 @@ module.exports = async function (context, req) {
 
     const newItem = {
         id: "5",
-        tree: "Pohutukawa",
+        name: "Pohutukawa",
         isComplete: false
       };
 
@@ -11,7 +11,7 @@ module.exports = async function (context, req) {
        // const { resource: createdItem } = await container.items.create(newItem);
 
        // context.bindings.outputDocument = req.body;
-       
+
         context.bindings.outputDocument = newItem;
         context.res = {
             body: {'result': 'success'}
