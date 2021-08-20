@@ -1,11 +1,11 @@
 module.exports = function (context, req) {
-  req.body.id = "5";
-  req.body.name = "Putaputaweta";
 
-  const name = req.body.name;
-
+  const id = "5";
+  const name = "Putaputaweta";
+ 
   if (name != null) {
-    context.bindings.outputDocument = req.body;
+    context.bindings.outputDocument.nam = name;
+    context.bindings.outputDocument.id = id;
     context.res = {
       body: { result: "success" },
     };
