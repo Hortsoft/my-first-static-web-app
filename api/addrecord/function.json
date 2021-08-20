@@ -6,8 +6,7 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "post",
-        "get"
+        "post"
       ]
     },
     {
@@ -16,8 +15,8 @@
       "name": "res"
     },
     {
-      "name": "outputDocument",
       "type": "cosmosDB",
+      "name": "outputDocument", 
       "databaseName": "trees",
       "collectionName": "varieties",
       "createIfNotExists": false,
