@@ -1,13 +1,15 @@
 module.exports = function (context, req) {
 
-  const id = "5";
-  const name = "Putaputaweta";
+    const newItem = {
+        id: "5",
+        name: "Pohutukawa",
+        };
  
-  if (name != null) {
-    context.bindings.outputDocument.name = name;
-    context.bindings.outputDocument.id = id;
+  if (newItem != null) { 
+    context.bindings.outputDocument = newItem;
     context.res = {
-      body: { result: "success" },
+        status: 200,
+        body: { result: "success" },
     };
   } else {
     context.res = {
