@@ -20,7 +20,7 @@
       "type": "cosmosDB",
       "databaseName": "trees",
       "collectionName": "varieties",
-      "createIfNotExists": true,
+      "createIfNotExists": false,
       "connectionStringSetting": "CosmosDBConnection",
       "partitionKey": "/name",
       "direction": "out"
