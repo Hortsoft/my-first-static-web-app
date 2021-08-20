@@ -9,6 +9,11 @@ const loadUsers = async () =>
     .then(res => (res.ok ? res : Promise.reject(res)))
     .then(res => res.json())
  
+    function addRecordAPI() {
+      alert('Trying to add a record!');
+        fetch(`/api/addrecord`)
+    }
+
 function App() {
   const { data, error, isLoading } = useAsync({ promiseFn: loadUsers })
   if (isLoading) return "Loading..."
@@ -20,20 +25,21 @@ function App() {
     <div className="container">
       <div>
         <h2>React Async - Cosmos DB Trees</h2>
-
+        <button style={{background:'green'}} onClick={addRecordAPI}>Default</button>
         <Router>
+        <Link to="first"> add</Link>
           <ul>
             {data.map((user) => (
-              <li>
+              <li style={{ textDecoration: 'none' }} >
                 <Link to={user.name} activeClassName="active-link">
-                  {user.name}
+                 {user.name} 
                 </Link>
               </li>
             ))}
           </ul>{" "}
         </Router>
       </div>
-    </div>
+    </div> 
   );
 }
 export default App;
