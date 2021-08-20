@@ -4,7 +4,7 @@ module.exports = function (context, req) {
   const name = "Putaputaweta";
  
   if (name != null) {
-    context.bindings.outputDocument.nam = name;
+    context.bindings.outputDocument.name = name;
     context.bindings.outputDocument.id = id;
     context.res = {
       body: { result: "success" },
